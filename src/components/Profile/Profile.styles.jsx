@@ -1,12 +1,13 @@
 import styled from "@emotion/styled";
 
 export const Container = styled.div`
-margin:40px;
+margin:20px auto;
 background-color: #E7E3E3;
-padding:60px;
+padding: 60px 0;
 display:flex;
 flex-direction: column;
 align-items:center;
+width:400px;
 `
 
 export const Description = styled.div`

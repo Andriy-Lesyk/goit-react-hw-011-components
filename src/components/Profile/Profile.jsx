@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import {Container, Description, Photo, Name, Location, Tag, StatsItems, StItem} from "./Profile.styles"
 
 const Profile=({ avatar, tag, name, location, statis})=> {
@@ -27,6 +28,9 @@ const Profile=({ avatar, tag, name, location, statis})=> {
           
         </Container>
   )
+}
+Profile.propTypes = {
+    src: PropTypes.string,
 }
 
 export default Profile
