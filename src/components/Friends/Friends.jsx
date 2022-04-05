@@ -4,7 +4,8 @@ import { Friendlist, Friend, Status, Photo,Text} from './Friends.styled'
 
 function Friends({ friends}) {
   return (
-      <Friendlist>{
+      <Friendlist>
+          {
           friends.map(({ id, avatar, name, isOnline})=>(
             <Friend key={id}>
                 <Status isOnline={isOnline }></Status>
@@ -12,12 +13,14 @@ function Friends({ friends}) {
                 <Text>{name}</Text>  
             </Friend>
   ))
-      }</Friendlist>
+          }
+      </Friendlist>
   )
 }
 Friends.propTypes = {
-    key: PropTypes.number,
-    isOnline: PropTypes.bool,
-    src: PropTypes.string
+    key: PropTypes.number.isRequired,
+    isOnline: PropTypes.bool.isRequired,
+    src: PropTypes.string.isRequired,
+    friends: PropTypes.array.isRequired,
 }
 export default Friends

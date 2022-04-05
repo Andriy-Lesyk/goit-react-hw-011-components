@@ -60,5 +60,5 @@ flex-direction:column;
 align-items:center;
 border: solid 1px #b8b2b2;
 width: 220px;
-padding: 10px 10px;
+padding: 10px;
 `

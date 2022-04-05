@@ -30,7 +30,13 @@ const Profile=({ avatar, tag, name, location, statis})=> {
   )
 }
 Profile.propTypes = {
-    src: PropTypes.string,
+    src: PropTypes.string.isRequired,
+    name: PropTypes.string.isRequired,
+    tag: PropTypes.string.isRequired,
+    location: PropTypes.string.isRequired,
+    avatar: PropTypes.string.isRequired,
+    statis: PropTypes.object.isRequired,
+  
 }
 
 export default Profile

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from "prop-types"
 import { Transhyst, Tablehead, Tablerow, Thead, Tablebody, Tbody} from "./Transaction.styled"
 
 
@@ -24,5 +25,8 @@ const Transaction = ({ items}) => {
       </Transhyst>
   )
 }
+Transaction.propTypes={
+  items:PropTypes.array.isRequired,
+};
 
 export default Transaction
